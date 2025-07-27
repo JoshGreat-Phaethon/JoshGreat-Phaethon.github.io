@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+body {
+  background: url("well.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.agent {
+  text-align: center;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  position: relative;
+}
+
+.glow {
+  color: rgb(22, 28, 28);
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+  text-shadow: #00ffee 0px 0px 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #00ffee;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  background: #1e1e1e;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #00ffee;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 10px #00ffee88;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #777;
+  font-size: 0.9em;
+}
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #d86b0c;
+  box-shadow: 0 0 15px #000000aa;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-color: #000;
+}
+.istri {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  animation: floatY 3s ease-in-out infinite;
+  z-index: 999;
+}
+.istri:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.about-me {
+  background: #1e1e1e;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #00ffee;
+  transition: 0.3s;
+}
+
+.about-me:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 10px #00ffee88;
+}
