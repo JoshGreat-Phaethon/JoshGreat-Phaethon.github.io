@@ -92,12 +92,12 @@ footer {
   background-color: #000;
 }
 .istri {
-  position: top;
+  position: fixed;
   bottom: 0;
   right: 0;
   width: 150px;
   animation: floatY 3s ease-in-out infinite;
-  
+  z-index: 999;
 }
 .istri:hover {
   transform: scale(1.1);
